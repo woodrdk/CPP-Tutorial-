@@ -7,15 +7,25 @@ using namespace std;
 
 int main()
 {
-    float fValue = 123.456789;
-    cout << "SizeOf float: " << sizeof(float) << endl;
-    cout << setprecision(20) << fixed << fValue << endl;
-    double dValue = 123.456789;
-    cout << setprecision(20) << fixed << dValue << endl;
+    bool bValue = true;
+    cout << bValue << endl;
 
-    long double lValue = 123.456789876543210;
-    cout << setprecision(20) << fixed << endl;
-    cout << "SizeOf long double: " << sizeof(lValue) << endl;
+    char cValue = 'g';
+    cout << cValue << endl;
+    cout << "Size of char: " << sizeof(char) << endl;
+    wchar_t wValue = 'i';
+    cout << (char)wValue << endl;
+    cout << "Size of wchar_t: " << sizeof(wchar_t) << endl;
+
+    // float fValue = 123.456789;
+    // cout << "SizeOf float: " << sizeof(float) << endl;
+    // cout << setprecision(20) << fixed << fValue << endl;
+    // double dValue = 123.456789;
+    // cout << setprecision(20) << fixed << dValue << endl;
+
+    // long double lValue = 123.456789876543210;
+    // cout << setprecision(20) << fixed << endl;
+    // cout << "SizeOf long double: " << sizeof(lValue) << endl;
 
     // int value = -54656;
     // cout << value << endl;
