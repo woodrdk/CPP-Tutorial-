@@ -1,19 +1,36 @@
 
 #include <iostream>
+#include <limits>
+ 
 using namespace std;
 
 int main()
 {
+    int value = -54656;
+    cout << value << endl;
+    cout << "Max int value " << INT_MAX << endl;
+    cout << "Min int value " << INT_MIN << endl;
 
-    cout << "Enter your name: " << flush;
-    string input;
-    cin >> input;
-    cout << "You entered: " << input << endl;
+    long int lValue = 2345325345345;
+    cout << lValue << endl;
+    short int sValue = 23434;
+    cout << sValue << endl;
 
-    cout << "Enter a number: " << flush;
-    int value;
-    cin >> value;
-    cout << "You entered: " << value << endl;
+    cout << "Size of int: " << sizeof(int) << endl;
+    cout << "Size of short int: " << sizeof(short int) << endl;
+
+    unsigned int uValue = 2342343;
+    cout << uValue << endl;
+
+    // cout << "Enter your name: " << flush;
+    // string input;
+    // cin >> input;
+    // cout << "You entered: " << input << endl;
+
+    // cout << "Enter a number: " << flush;
+    // int value;
+    // cin >> value;
+    // cout << "You entered: " << value << endl;
 
 
     // string text1 = "Hello ";
