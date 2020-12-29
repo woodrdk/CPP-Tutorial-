@@ -1,26 +1,37 @@
 
 #include <iostream>
 #include <limits>
+#include <iomanip>
  
 using namespace std;
 
 int main()
 {
-    int value = -54656;
-    cout << value << endl;
-    cout << "Max int value " << INT_MAX << endl;
-    cout << "Min int value " << INT_MIN << endl;
+    float fValue = 123.456789;
+    cout << "SizeOf float: " << sizeof(float) << endl;
+    cout << setprecision(20) << fixed << fValue << endl;
+    double dValue = 123.456789;
+    cout << setprecision(20) << fixed << dValue << endl;
 
-    long int lValue = 2345325345345;
-    cout << lValue << endl;
-    short int sValue = 23434;
-    cout << sValue << endl;
+    long double lValue = 123.456789876543210;
+    cout << setprecision(20) << fixed << endl;
+    cout << "SizeOf long double: " << sizeof(lValue) << endl;
 
-    cout << "Size of int: " << sizeof(int) << endl;
-    cout << "Size of short int: " << sizeof(short int) << endl;
+    // int value = -54656;
+    // cout << value << endl;
+    // cout << "Max int value " << INT_MAX << endl;
+    // cout << "Min int value " << INT_MIN << endl;
 
-    unsigned int uValue = 2342343;
-    cout << uValue << endl;
+    // long int lValue = 2345325345345;
+    // cout << lValue <<  endl;
+    // short int sValue = 23434;
+    // cout << sValue << endl;
+
+    // cout << "Size of int: " << sizeof(int) << endl;
+    // cout << "Size of short int: " << sizeof(short int) << endl;
+
+    // unsigned int uValue = 2342343;
+    // cout << uValue << endl;
 
     // cout << "Enter your name: " << flush;
     // string input;
