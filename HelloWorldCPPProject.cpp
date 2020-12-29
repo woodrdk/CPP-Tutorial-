@@ -7,15 +7,50 @@ using namespace std;
 
 int main()
 {
-    bool bValue = true;
-    cout << bValue << endl;
 
-    char cValue = 'g';
-    cout << cValue << endl;
-    cout << "Size of char: " << sizeof(char) << endl;
-    wchar_t wValue = 'i';
-    cout << (char)wValue << endl;
-    cout << "Size of wchar_t: " << sizeof(wchar_t) << endl;
+    cout << "1.\tAdd new record." << endl;
+    cout << "2.\tDelete record" << endl;
+    cout << "3.\tView record" << endl;
+    cout << "4.\tSearch record" << endl;
+    cout << "5.\tQuit" << endl;
+    cout << "Enter your selection >" << flush;
+    int value;
+    cin >> value;
+    if (value < 3) {
+        cout << "Insufficient privileges to use these menu options!" << endl;
+    }
+    else {
+        cout << "Privilege level sufficient." << endl;
+    }
+    if (value == 5) {
+        cout << "Quitting... " << endl;
+    }
+    else {
+        cout << "Not Quitting." << endl;
+    }
+    //string password = "hello";
+    //cout << "Enter your password > " << flush;
+    //string input;
+    //cin >> input;
+    //// cout << "'" << input << "'" << endl;
+    //if (input == password) {
+    //    cout << "Password accepted." << endl;
+    //}
+    //else {
+    //    cout << "Password denied." << endl;
+    //}
+
+
+
+
+    // bool bValue = true;
+    //  cout << bValue << endl;
+    // char cValue = 'g';
+    // cout << cValue << endl;
+    // cout << "Size of char: " << sizeof(char) << endl;
+    // wchar_t wValue = 'i';
+    // cout << (char)wValue << endl;
+    // cout << "Size of wchar_t: " << sizeof(wchar_t) << endl;
 
     // float fValue = 123.456789;
     // cout << "SizeOf float: " << sizeof(float) << endl;
