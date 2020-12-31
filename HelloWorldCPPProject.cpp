@@ -7,12 +7,24 @@ using namespace std;
 
 int main()
 {
-    int i = 0;
+    const string password = "hello";
+    string input;
+    do {
+        cout << "Enter your password > " << flush;
+        cin >> input;
+        if (input != password) {
+            cout << "Access denied." << endl;
+        }
+    } while (input != password);
+    cout << "Password accepted" << endl;
+
+
+  /*  int i = 0;
     while (i < 5) {
-        cout << "Hello" << i << endl;
+        cout << "Hello " << i << endl;
         i++;
     }
-    cout << "Programming quitting" << endl;
+    cout << "Programming quitting" << endl;*/
 
     //int value1 = 7;
     //int value2 = 4;
