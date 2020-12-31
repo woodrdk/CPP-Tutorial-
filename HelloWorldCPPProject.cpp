@@ -7,7 +7,11 @@ using namespace std;
 
 int main()
 {
-    const string password = "hello";
+    for (int i = 0; i < 10; i++) {
+        cout << "Hello " << i << endl;
+    }
+
+    /*const string password = "hello";
     string input;
     do {
         cout << "Enter your password > " << flush;
@@ -16,7 +20,7 @@ int main()
             cout << "Access denied." << endl;
         }
     } while (input != password);
-    cout << "Password accepted" << endl;
+    cout << "Password accepted" << endl;*/
 
 
   /*  int i = 0;
