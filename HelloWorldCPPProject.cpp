@@ -7,15 +7,33 @@ using namespace std;
 
 int main()
 {
-    string animals[][3] = {
-        {"fox", "dog", "cat"},
-        {"moose", "squirrel", "parrot"}
-    };
-    for (unsigned int i = 0; i < sizeof(animals)/sizeof(animals[0]); i++) {
-        for (unsigned int j = 0; j < sizeof(animals[0])/sizeof(string); j++) {
-            cout << animals[i][j] << " " << flush;
-        }
+
+    int value = 4;
+    switch (value) {
+    case 4:
+        cout << "Value is 4." << endl;
+        break;
+    
+    case 5:
+        cout << "Value is 5." << endl;
+        break;
+    
+    case 6:
+        cout << "Value is 6." << endl;
+        break;
+    
+    default:
+        cout << "Unrecognized value" << endl;
     }
+    //string animals[][3] = {
+    //    {"fox", "dog", "cat"},
+    //    {"moose", "squirrel", "parrot"}
+    //};
+    //for (unsigned int i = 0; i < sizeof(animals)/sizeof(animals[0]); i++) {
+    //    for (unsigned int j = 0; j < sizeof(animals[0])/sizeof(string); j++) {
+    //        cout << animals[i][j] << " " << flush;
+    //    }
+    //}
 
 
     //int values[] = { 4,7,3,4 };
