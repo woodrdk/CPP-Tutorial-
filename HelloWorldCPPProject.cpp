@@ -16,7 +16,28 @@ int main()
     cout << "Enter your selection >" << flush;
     int value;
     cin >> value;
-    if (value < 3) {
+
+    if (value == 1) {
+        cout << "Adding new record..." << endl;
+    }
+    else if (value == 2) {
+        cout << "Deleting record..." << endl;
+    }
+    else if (value == 3) {
+        cout << "Viewing..." << endl;
+    }
+    else if (value == 4) {
+        cout << "Searching..." << endl;
+    }
+    else if (value == 5) {
+        cout << "Quitting..." << endl;
+    }
+    else {
+        cout << "Invalid option" << endl;
+    }
+
+
+    /*if (value < 3) {
         cout << "Insufficient privileges to use these menu options!" << endl;
     }
     else {
@@ -27,7 +48,7 @@ int main()
     }
     else {
         cout << "Not Quitting." << endl;
-    }
+    }*/
     //string password = "hello";
     //cout << "Enter your password > " << flush;
     //string input;
