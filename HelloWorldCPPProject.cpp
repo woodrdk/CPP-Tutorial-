@@ -8,7 +8,19 @@ using namespace std;
 int main()
 {
 
-    cout << "1.\tAdd new record." << endl;
+
+
+    float value = 1.1;
+    if (value = 1.1) {
+        cout << "Equals" << endl;
+    }
+    else {
+        cout << "Not equal" << endl;
+    }
+    cout << setprecision(10) << value << endl;
+
+
+    /*cout << "1.\tAdd new record." << endl;
     cout << "2.\tDelete record" << endl;
     cout << "3.\tView record" << endl;
     cout << "4.\tSearch record" << endl;
@@ -34,7 +46,7 @@ int main()
     }
     else {
         cout << "Invalid option" << endl;
-    }
+    }*/
 
 
     /*if (value < 3) {
