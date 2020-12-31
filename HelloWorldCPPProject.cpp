@@ -7,34 +7,53 @@ using namespace std;
 
 int main()
 {
+    int values[] = { 4,7,3,4 };
+    cout << sizeof(values) << endl;
+    cout << sizeof(int) << endl;
 
-    cout << "Array of integers" << endl;
-    cout << "=================" << endl;
-    int values[3];
-    values[0] = 88;
-    values[1] = 123;
-    values[2] = 7;
+    for (unsigned int i = 0; i < sizeof(values) / sizeof(int); i++) {
+        cout << values[i] << " " << flush;
+    }
+    cout << endl;
 
-    cout << values[0] << endl;
-    cout << values[1] << endl;
-    cout << values[2] << endl;
 
-    cout << endl << "Array of doubles" << endl;
-    cout << "=================" << endl;
-    double numbers[4] = { 4.5, 2.3, 7.2, 8.1 };
-    for (int i = 0; i < 4; i++) {
-        cout << "Elements at index " << i << ": " << numbers[i] << endl;
-    }
-    cout << endl << "Initializing with zero values" << endl;
-    cout << "=================" << endl;
-    int numberArray[8] = {};
-    for (int i = 0; i < 8; i++) {
-        cout << "Element at index " << i << ": " << numberArray[i] << endl;
-    }
-    string texts[] = { "Apple", "Banana", "Orange" };
-    for (int i = 0; i < 3; i++) {
-        cout << "Element at index " << i << ": " << texts[i] << endl;
-    }
+    //string animals[][3] = {
+    //    {"fox", "dog", "cat"},
+    //    {"moose", "squirrel", "parrot"}
+    //};
+    //for (int i = 0; i < 2; i++) {
+    //    for (int j = 0; j < 3; j++) {
+    //        cout << animals[i][j] << " " << flush;
+    //    }
+    //}
+
+    //cout << "Array of integers" << endl;
+    //cout << "=================" << endl;
+    //int values[3];
+    //values[0] = 88;
+    //values[1] = 123;
+    //values[2] = 7;
+
+    //cout << values[0] << endl;
+    //cout << values[1] << endl;
+    //cout << values[2] << endl;
+
+    //cout << endl << "Array of doubles" << endl;
+    //cout << "=================" << endl;
+    //double numbers[4] = { 4.5, 2.3, 7.2, 8.1 };
+    //for (int i = 0; i < 4; i++) {
+    //    cout << "Elements at index " << i << ": " << numbers[i] << endl;
+    //}
+    //cout << endl << "Initializing with zero values" << endl;
+    //cout << "=================" << endl;
+    //int numberArray[8] = {};
+    //for (int i = 0; i < 8; i++) {
+    //    cout << "Element at index " << i << ": " << numberArray[i] << endl;
+    //}
+    //string texts[] = { "Apple", "Banana", "Orange" };
+    //for (int i = 0; i < 3; i++) {
+    //    cout << "Element at index " << i << ": " << texts[i] << endl;
+    //}
     //const string password = "hello";
     //string input;
     //do {
