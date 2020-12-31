@@ -5,26 +5,60 @@
  
 using namespace std;
 
-int main()
-{
-
-    int value = 4;
-    switch (value) {
-    case 4:
-        cout << "Value is 4." << endl;
-        break;
+void showMenu() {
+    cout << "1.\tAdd new record." << endl;
+    cout << "2.\tDelete record" << endl;
+    cout << "3.\tView record" << endl;
+    cout << "4.\tSearch record" << endl;
+    cout << "5.\tQuit" << endl;
+}
+void processSelection() {
+    cout << "Enter your selection >" << flush;
+    int value;
+    cin >> value;
     
-    case 5:
-        cout << "Value is 5." << endl;
-        break;
-    
-    case 6:
-        cout << "Value is 6." << endl;
-        break;
-    
-    default:
-        cout << "Unrecognized value" << endl;
+    if (value == 1) {
+        cout << "Adding new record..." << endl;
     }
+    else if (value == 2) {
+        cout << "Deleting record..." << endl;
+    }
+    else if (value == 3) {
+        cout << "Viewing..." << endl;
+    }
+    else if (value == 4) {
+        cout << "Searching..." << endl;
+    }
+    else if (value == 5) {
+        cout << "Quitting..." << endl;
+    }
+    else {
+        cout << "Invalid option" << endl;
+    }
+}
+int main()
+{   
+    showMenu();
+    processSelection();
+
+
+    //int value = 4;
+    //switch (value) {
+    //case 4:
+    //    cout << "Value is 4." << endl;
+    //    break;
+    //
+    //case 5:
+    //    cout << "Value is 5." << endl;
+    //    break;
+    //
+    //case 6:
+    //    cout << "Value is 6." << endl;
+    //    break;
+    //
+    //default:
+    //    cout << "Unrecognized value" << endl;
+    //}
     //string animals[][3] = {
     //    {"fox", "dog", "cat"},
     //    {"moose", "squirrel", "parrot"}
