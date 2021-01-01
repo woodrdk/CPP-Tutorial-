@@ -40,18 +40,35 @@ void processSelection() {
         cout << "Invalid option" << endl;
     }
 }
+
+class Animal {
+public:
+    void speak() {
+        cout << "Grrr" << endl;
+    }
+};
+
+class Eagle :public Animal {
+public:
+    void fly() {
+        cout << "Eagle soaring high!" << endl;
+    }
+};
 int main()
 {
+    Animal a;
+    a.speak();
+    Eagle e;
+    e.speak();
+    e.fly();
 
-
-
-    Person person1;
+    /*Person person1;
     cout << person1.toString() << endl;
     Person person2("BOB");
     cout << person2.toString() << endl;
 
     Person person3("Sue", 39);
-    cout << person3.toString() << endl;
+    cout << person3.toString() << endl;*/
 
 
     //string name = "Rob";
