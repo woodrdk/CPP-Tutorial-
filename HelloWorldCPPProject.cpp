@@ -54,13 +54,26 @@ public:
         cout << "Eagle soaring high!" << endl;
     }
 };
+
+class Frog {
+private: 
+    string name;
+private:
+    string getName() { return name; }
+public:
+    Frog(string name) : name(name) {}
+    void info() { cout << "My name is: " << getName() << endl; }
+};
 int main()
 {
-    Animal a;
-    a.speak();
-    Eagle e;
-    e.speak();
-    e.fly();
+    Frog frog("Freddy");
+    frog.info();
+
+    //Animal a;
+    //a.speak();
+    //Eagle e;
+    //e.speak();
+    //e.fly();
 
     /*Person person1;
     cout << person1.toString() << endl;
