@@ -6,6 +6,7 @@
 #include "Dog.h"
 #include "Pig.h"
 #include "Person.h"
+#include<sstream>
 using namespace std;
 
 void showMenu() {
@@ -41,11 +42,21 @@ void processSelection() {
 }
 int main()
 {
+    string name = "Rob";
+    int age = 38;
+    stringstream ss;
+    ss << "Name is: ";
+    ss << name;
+    ss << "; Age is: ";
+    ss << age;
+    string info = ss.str();
+    cout << ss.str() << endl; // stream
+    cout << info << endl; // string
 
-    Person person;
-    person.setName("Draven");
-    cout<< person.getName() << endl; 
-    cout << person.toString() << endl;
+    //Person person;
+    //person.setName("Draven");
+    //cout<< person.getName() << endl; 
+    //cout << person.toString() << endl;
 
     //{
     //    Pig bacon;
