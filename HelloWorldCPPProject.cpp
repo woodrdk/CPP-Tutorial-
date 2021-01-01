@@ -4,6 +4,7 @@
 #include <iomanip>
 #include "Cat.h"
 #include "Dog.h"
+#include "Pig.h"
 using namespace std;
 
 void showMenu() {
@@ -38,14 +39,26 @@ void processSelection() {
     }
 }
 int main()
-{   
-    Cat cat1;
-    cat1.speak();
-    cat1.jump();
-    Dog dog1;
-    dog1.run();
-    dog1.speak();
+{
+    Pig bacon;
+    bacon.makeHappy();
+    bacon.speak();
+    bacon.setColor();
 
+    Pig porkchop;
+    porkchop.makeSad();
+    porkchop.speak();
+    porkchop.setColor();
+
+    //Cat cat1;
+    //cat1.speak();
+    //cat1.jump();
+    //Dog dog1;
+    //dog1.run();
+    //dog1.speak();
+    //Pig pig1;
+    //pig1.eat();
+    //pig1.speak();
 
    /* showMenu();
     processSelection();*/

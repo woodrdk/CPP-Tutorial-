@@ -142,10 +142,12 @@
     <ClCompile Include="Cat.cpp" />
     <ClCompile Include="dog.cpp" />
     <ClCompile Include="HelloWorldCPPProject.cpp" />
+    <ClCompile Include="pig.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cat.h" />
     <ClInclude Include="dog.h" />
+    <ClInclude Include="pig.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
