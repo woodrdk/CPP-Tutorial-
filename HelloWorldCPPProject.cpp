@@ -42,16 +42,24 @@ void processSelection() {
 }
 int main()
 {
-    string name = "Rob";
-    int age = 38;
-    stringstream ss;
-    ss << "Name is: ";
-    ss << name;
-    ss << "; Age is: ";
-    ss << age;
-    string info = ss.str();
-    cout << ss.str() << endl; // stream
-    cout << info << endl; // string
+
+    Person person1;
+    cout << person1.toString() << endl;
+    Person person2("BOB");
+    cout << person2.toString() << endl;
+
+    Person person3("Sue", 39);
+    cout << person3.toString() << endl;
+    //string name = "Rob";
+    //int age = 38;
+    //stringstream ss;
+    //ss << "Name is: ";
+    //ss << name;
+    //ss << "; Age is: ";
+    //ss << age;
+    //string info = ss.str();
+    //cout << ss.str() << endl; // stream
+    //cout << info << endl; // string
 
     //Person person;
     //person.setName("Draven");
