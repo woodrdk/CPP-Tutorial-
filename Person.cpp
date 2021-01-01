@@ -1,21 +1,8 @@
 #include "Person.h"
 #include<sstream>
-Person::Person() {
-	name = "undefined";
-	age = 0;
-}
 
-//Person::Person(string newName) {
-//	name = newName;
-//	age = 0;
-//}
-Person::Person(string newName, int newAge) {
-	this->name = newName;
-	// name = newName;
-	this->age = newAge;
-	// age = newAge;
-	cout << "Memory location of object: " << this << endl;
-}
+
+
 
 string Person::toString() {
 	stringstream ss;
