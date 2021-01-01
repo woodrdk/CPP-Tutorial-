@@ -5,6 +5,7 @@
 #include "Cat.h"
 #include "Dog.h"
 #include "Pig.h"
+#include "Person.h"
 using namespace std;
 
 void showMenu() {
@@ -40,12 +41,18 @@ void processSelection() {
 }
 int main()
 {
-    {
-        Pig bacon;
-        bacon.makeHappy();
-        bacon.speak();
-        bacon.setColor();
-    }
+
+    Person person;
+    person.setName("Draven");
+    cout<< person.getName() << endl; 
+    cout << person.toString() << endl;
+
+    //{
+    //    Pig bacon;
+    //    bacon.makeHappy();
+    //    bacon.speak();
+    //    bacon.setColor();
+    //}
 
     //Pig porkchop;
     //porkchop.makeSad();
