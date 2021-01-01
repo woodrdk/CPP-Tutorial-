@@ -2,6 +2,7 @@
 #include <iostream>
 #include <limits>
 #include <iomanip>
+
 #include "Cat.h"
 #include "Dog.h"
 #include "Pig.h"
@@ -96,21 +97,64 @@ public:
 };
 
 
+// .h header file
+class Test {
+private:
+    int id;
+    static int count;
+    
+public:
+    // initialization of const must be done here
+    static int const MAX = 99;
+    static void showInfo() {
+        cout << count << endl;
+    }
+    int getId() {
+        return id;
+    }
+    Test() {
+        id = count++;
+    }
+};
+
+// .cpp source
+int Test::count = 0;
+
 int main()
 {
+    Test::showInfo();
+    cout << Test::MAX << endl;
+    Test test1;
+    cout << test1.getId();
+    cout << endl << "^^ Test id ^^" << endl;
+    Test::showInfo();
 
-    cout << "This section of code was for section" << endl;
-    Machine machine;
-    Vehicle vehicle;
-    vehicle.info();
-    Car car;
-    car.info();
-    Vehicle veh2(69);
-    veh2.info();
-    Machine machine2(123);
-    machine2.info();
+    Test test2;
+    cout << test2.getId();
+    cout << endl <<  "^^ Test id ^^" << endl;
+    Test::showInfo();
+    //cout << Test::count << endl;
+    //Test::count++;
+    //cout << Test::count << endl;
 
-    cout << "This section of code was for section" << endl;
+    ////twos complement clip
+    //char value = 127;
+    //cout << (int)value << endl;
+    //value++;
+    //cout << (int)value << endl;
+
+    //cout << "This section of code was for section" << endl;
+    //Machine machine;
+    //Vehicle vehicle;
+    //vehicle.info();
+    //Car car;
+    //car.info();
+    //Vehicle veh2(69);
+    //veh2.info();
+    //Machine machine2(123);
+    //machine2.info();
+
+    // cout << "This section of code was for section" << endl;
     //Frog frog("Freddy");
     //frog.info();
 
@@ -120,7 +164,7 @@ int main()
     //e.speak();
     //e.fly();
 
-    cout << "This section of code was for section" << endl;
+    // cout << "This section of code was for section" << endl;
     /*Person person1;
     cout << person1.toString() << endl;
     Person person2("BOB");
@@ -129,7 +173,7 @@ int main()
     Person person3("Sue", 39);
     cout << person3.toString() << endl;*/
 
-    cout << "This section of code was for section" << endl;
+   // cout << "This section of code was for section" << endl;
     //string name = "Rob";
     //int age = 38;
     //stringstream ss;
@@ -145,7 +189,7 @@ int main()
     //person.setName("Draven");
     //cout<< person.getName() << endl; 
     //cout << person.toString() << endl;
-    cout << "This section of code was for section" << endl;
+  //  cout << "This section of code was for section" << endl;
     //{
     //    Pig bacon;
     //    bacon.makeHappy();
@@ -167,9 +211,9 @@ int main()
     //Pig pig1;
     //pig1.eat();
     //pig1.speak();
-    cout << "This section of code was for the functions section" << endl;
-    showMenu();
-    processSelection();
+   // cout << "This section of code was for the functions section" << endl;
+   // showMenu();
+   // processSelection();
 
     //int value = 4;
     //switch (value) {
