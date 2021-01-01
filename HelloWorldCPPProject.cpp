@@ -9,6 +9,8 @@
 #include<sstream>
 using namespace std;
 
+
+// show menu code 
 void showMenu() {
     cout << "1.\tAdd new record." << endl;
     cout << "2.\tDelete record" << endl;
@@ -16,6 +18,7 @@ void showMenu() {
     cout << "4.\tSearch record" << endl;
     cout << "5.\tQuit" << endl;
 }
+// code to process the selection picked
 void processSelection() {
     cout << "Enter your selection >" << flush;
     int value;
@@ -41,6 +44,7 @@ void processSelection() {
     }
 }
 
+// animal class
 class Animal {
 public:
     void speak() {
@@ -48,6 +52,7 @@ public:
     }
 };
 
+// eagle class that inherits from animal
 class Eagle :public Animal {
 public:
     void fly() {
@@ -55,6 +60,7 @@ public:
     }
 };
 
+// frog class
 class Frog {
 private: 
     string name;
@@ -65,6 +71,7 @@ public:
     void info() { cout << "My name is: " << getName() << endl; }
 };
 
+// machine class
 class Machine {
 private:
     int id;
@@ -74,19 +81,25 @@ public:
     void info() { cout << "ID: " << id << endl; }
 };
 
+// vehicle class that inherits machine
 class Vehicle: public Machine {
 public:
     Vehicle() { cout << "Vehicle no-argument constructor called" << endl; }
     Vehicle(int id): Machine(id) { cout << "Vehicle parameterized constructor called" << endl; }
 
 };
-
+ 
+// car class that inherits vehicle
 class Car : public Vehicle {
 public:
     Car() { cout << "Car no-argument constructor called" << endl; }
 };
+
+
 int main()
 {
+
+    cout << "This section of code was for section" << endl;
     Machine machine;
     Vehicle vehicle;
     vehicle.info();
@@ -96,6 +109,8 @@ int main()
     veh2.info();
     Machine machine2(123);
     machine2.info();
+
+    cout << "This section of code was for section" << endl;
     //Frog frog("Freddy");
     //frog.info();
 
@@ -105,6 +120,7 @@ int main()
     //e.speak();
     //e.fly();
 
+    cout << "This section of code was for section" << endl;
     /*Person person1;
     cout << person1.toString() << endl;
     Person person2("BOB");
@@ -113,7 +129,7 @@ int main()
     Person person3("Sue", 39);
     cout << person3.toString() << endl;*/
 
-
+    cout << "This section of code was for section" << endl;
     //string name = "Rob";
     //int age = 38;
     //stringstream ss;
@@ -129,7 +145,7 @@ int main()
     //person.setName("Draven");
     //cout<< person.getName() << endl; 
     //cout << person.toString() << endl;
-
+    cout << "This section of code was for section" << endl;
     //{
     //    Pig bacon;
     //    bacon.makeHappy();
@@ -151,9 +167,9 @@ int main()
     //Pig pig1;
     //pig1.eat();
     //pig1.speak();
-
-   /* showMenu();
-    processSelection();*/
+    cout << "This section of code was for the functions section" << endl;
+    showMenu();
+    processSelection();
 
     //int value = 4;
     //switch (value) {
