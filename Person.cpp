@@ -10,8 +10,11 @@ Person::Person() {
 //	age = 0;
 //}
 Person::Person(string newName, int newAge) {
-	name = newName;
-	age = newAge;
+	this->name = newName;
+	// name = newName;
+	this->age = newAge;
+	// age = newAge;
+	cout << "Memory location of object: " << this << endl;
 }
 
 string Person::toString() {
