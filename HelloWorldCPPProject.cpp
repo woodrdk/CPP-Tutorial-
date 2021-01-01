@@ -40,15 +40,17 @@ void processSelection() {
 }
 int main()
 {
-    Pig bacon;
-    bacon.makeHappy();
-    bacon.speak();
-    bacon.setColor();
+    {
+        Pig bacon;
+        bacon.makeHappy();
+        bacon.speak();
+        bacon.setColor();
+    }
 
-    Pig porkchop;
-    porkchop.makeSad();
-    porkchop.speak();
-    porkchop.setColor();
+    //Pig porkchop;
+    //porkchop.makeSad();
+    //porkchop.speak();
+    //porkchop.setColor();
 
     //Cat cat1;
     //cat1.speak();

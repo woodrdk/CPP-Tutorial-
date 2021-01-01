@@ -13,5 +13,7 @@ public:
 	void makeSad();
 	void speak();
 	void eat();
+	Pig();
+	~Pig();
 };
 

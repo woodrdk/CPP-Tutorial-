@@ -3,6 +3,17 @@
 #include "pig.h"
 using namespace std;
 
+
+Pig::Pig() {
+	cout << "Pig Created" << endl;
+	happy = false;
+}
+
+Pig::~Pig() {
+	cout << "Cat destroyed" << endl;
+}
+
+
 void Pig::speak() {
 	if (happy) {
 		cout << "OINK OINK!!!!" << endl;
