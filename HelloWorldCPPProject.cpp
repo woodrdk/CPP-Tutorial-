@@ -64,10 +64,40 @@ public:
     Frog(string name) : name(name) {}
     void info() { cout << "My name is: " << getName() << endl; }
 };
+
+class Machine {
+private:
+    int id;
+public:
+    Machine():id(0) { cout << "Machine no-argument constructor called" << endl; }
+    Machine(int id):id(id) { cout << "Machine parameterized constructor called" << endl; }
+    void info() { cout << "ID: " << id << endl; }
+};
+
+class Vehicle: public Machine {
+public:
+    Vehicle() { cout << "Vehicle no-argument constructor called" << endl; }
+    Vehicle(int id): Machine(id) { cout << "Vehicle parameterized constructor called" << endl; }
+
+};
+
+class Car : public Vehicle {
+public:
+    Car() { cout << "Car no-argument constructor called" << endl; }
+};
 int main()
 {
-    Frog frog("Freddy");
-    frog.info();
+    Machine machine;
+    Vehicle vehicle;
+    vehicle.info();
+    Car car;
+    car.info();
+    Vehicle veh2(69);
+    veh2.info();
+    Machine machine2(123);
+    machine2.info();
+    //Frog frog("Freddy");
+    //frog.info();
 
     //Animal a;
     //a.speak();
