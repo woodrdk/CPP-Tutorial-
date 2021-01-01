@@ -2,7 +2,8 @@
 #include <iostream>
 #include <limits>
 #include <iomanip>
- 
+#include "Cat.h"
+#include "Dog.h"
 using namespace std;
 
 void showMenu() {
@@ -38,9 +39,16 @@ void processSelection() {
 }
 int main()
 {   
-    showMenu();
-    processSelection();
+    Cat cat1;
+    cat1.speak();
+    cat1.jump();
+    Dog dog1;
+    dog1.run();
+    dog1.speak();
 
+
+   /* showMenu();
+    processSelection();*/
 
     //int value = 4;
     //switch (value) {
