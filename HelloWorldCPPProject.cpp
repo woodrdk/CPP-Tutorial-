@@ -129,19 +129,38 @@ void manipulate(double *pValue) {
 
 int main()
 {
+
+ 
     char text[] = "hello";
-    int nChars = sizeof(text)-1;
-    char* pStart = text;
-    char* pEnd = text + nChars-1;
-    while (pStart < pEnd) {
-        char save = *pStart;
-        *pStart = *pEnd;
-        *pEnd = save;
-        pStart++;
-        pEnd--;
+    for (int i = 0; i < sizeof(text); i++) {
+        cout << i << ": " << text[i] << endl; // if cast text[i] to int prints the 0 to show string end 
+    }
+    // cout << text << endl;
+
+    int k = 0;
+    while (true) {
+        if (text[k] == 0) {
+            break;
+        }
+
+        cout << text[k] << flush;
+        k++;
     }
 
-    cout << text << endl;
+
+    //char text[] = "hello";
+    //int nChars = sizeof(text)-1;
+    //char* pStart = text;
+    //char* pEnd = text + nChars-1;
+    //while (pStart < pEnd) {
+    //    char save = *pStart;
+    //    *pStart = *pEnd;
+    //    *pEnd = save;
+    //    pStart++;
+    //    pEnd--;
+    //}
+
+    //cout << text << endl;
 
 
 
