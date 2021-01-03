@@ -129,20 +129,47 @@ void manipulate(double *pValue) {
 
 int main()
 {
+    int count = 0;
+    for (int i = 0; i <= 10000; i++) {
+        if (i > 0 && i % 100 == 0) {
+            cout << "." << flush;
+            count++;
+        }
+    }
+    cout << endl << count << endl << endl;
+    double value1 = (double)7 / 2;
+    cout << value1 << endl;
+    int value2 = (int)7.3;
+    cout << value2 << endl;
 
-    int nValue = 8;
-    int* pnValue = &nValue; // or int *pnValue
+    int value3 = 8;
+    value3 += 1; // equals 8 + 1
+    cout << value3 << endl;
 
-    //nValue = 9;
-    cout << "Int value: " << nValue << endl;
-    cout << "Pointer to int address: " << pnValue << endl;
-    cout << "Int value via pointer: " << *pnValue << endl;
+    int value4 = 10;
+    value4 /= 5;
+    cout << value4 << endl;
 
-    cout << "===========================" << endl;
-    double dValue = 123.4;
-    cout << "1. dValue: " << dValue << endl;
-    manipulate(&dValue);
-    cout << "4. dValue: " << dValue << endl;
+    int value5 = 12 % 5;
+    cout << value5 << endl;
+
+    double equation = 5.3 / 4 + 2 * 6;
+    cout << equation << endl;
+
+
+    //int nValue = 8;
+    //int* pnValue = &nValue; // or int *pnValue
+
+    ////nValue = 9;
+    //cout << "Int value: " << nValue << endl;
+    //cout << "Pointer to int address: " << pnValue << endl;
+    //cout << "Int value via pointer: " << *pnValue << endl;
+
+    //cout << "===========================" << endl;
+    //double dValue = 123.4;
+    //cout << "1. dValue: " << dValue << endl;
+    //manipulate(&dValue);
+    //cout << "4. dValue: " << dValue << endl;
 
 
 
