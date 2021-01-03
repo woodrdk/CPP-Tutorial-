@@ -127,43 +127,58 @@ void manipulate(double *pValue) {
     cout << "3. Value of double in manipulate: " << pValue << endl;
 }
 
+void changeSomething(double &value) {
+    value = 123.4;
+}
 int main()
 {
-    char bigText[] = "supercalifragilisticexpialidocious";
-    cout << bigText << endl;
 
-    for (int j = 0; j < sizeof(bigText); j++) {
-        cout << bigText[j] << flush;
-        if (j == sizeof(bigText)-1) {
-            cout << endl << "Looped text result is done!" << endl;
-        }
-    }
-    int z = 0;
-    while (true) {
-        if (bigText[z] == 0) {
-            break;
-        }
-        cout << bigText[z] << flush;
-        z++;
-    }
-    cout << endl << "End of while loop" << endl;
+    int value1 = 8;
+    int &value2 = value1;
+    value2 = 10;
+    cout << "Value1: " << value1 << endl;
+    cout << "Value2: " << value2 << endl;
+    double value = 4.321;
+    changeSomething(value);
+    cout << value << endl;
 
-    cout << endl << endl;
-    char text[] = "hello";
-    for (int i = 0; i < sizeof(text); i++) {
-        cout << i << ": " << text[i] << endl; // if cast text[i] to int prints the 0 to show string end 
-    }
-    // cout << text << endl;
 
-    int k = 0;
-    while (true) {
-        if (text[k] == 0) {
-            break;
-        }
 
-        cout << text[k] << flush;
-        k++;
-    }
+    //char bigText[] = "supercalifragilisticexpialidocious";
+    //cout << bigText << endl;
+
+    //for (int j = 0; j < sizeof(bigText); j++) {
+    //    cout << bigText[j] << flush;
+    //    if (j == sizeof(bigText)-1) {
+    //        cout << endl << "Looped text result is done!" << endl;
+    //    }
+    //}
+    //int z = 0;
+    //while (true) {
+    //    if (bigText[z] == 0) {
+    //        break;
+    //    }
+    //    cout << bigText[z] << flush;
+    //    z++;
+    //}
+    //cout << endl << "End of while loop" << endl;
+
+    //cout << endl << endl;
+    //char text[] = "hello";
+    //for (int i = 0; i < sizeof(text); i++) {
+    //    cout << i << ": " << text[i] << endl; // if cast text[i] to int prints the 0 to show string end 
+    //}
+    //// cout << text << endl;
+
+    //int k = 0;
+    //while (true) {
+    //    if (text[k] == 0) {
+    //        break;
+    //    }
+
+    //    cout << text[k] << flush;
+    //    k++;
+    //}
 
 
     //char text[] = "hello";
