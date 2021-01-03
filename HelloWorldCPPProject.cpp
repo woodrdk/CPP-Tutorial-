@@ -121,10 +121,10 @@ public:
 int Test::count = 0;
 
 
-void manipulate(double value) {
-    cout << "2. Value of double in manipulate: " << value << endl;
-    value = 10.0;
-    cout << "3. Value of double in manipulate: " << value << endl;
+void manipulate(double *pValue) {
+    cout << "2. Value of double in manipulate: " << pValue << endl;
+    *pValue = 10.0;
+    cout << "3. Value of double in manipulate: " << pValue << endl;
 }
 
 int main()
@@ -141,7 +141,7 @@ int main()
     cout << "===========================" << endl;
     double dValue = 123.4;
     cout << "1. dValue: " << dValue << endl;
-    manipulate(dValue);
+    manipulate(&dValue);
     cout << "4. dValue: " << dValue << endl;
 
 
