@@ -129,8 +129,26 @@ void manipulate(double *pValue) {
 
 int main()
 {
+    char bigText[] = "supercalifragilisticexpialidocious";
+    cout << bigText << endl;
 
- 
+    for (int j = 0; j < sizeof(bigText); j++) {
+        cout << bigText[j] << flush;
+        if (j == sizeof(bigText)-1) {
+            cout << endl << "Looped text result is done!" << endl;
+        }
+    }
+    int z = 0;
+    while (true) {
+        if (bigText[z] == 0) {
+            break;
+        }
+        cout << bigText[z] << flush;
+        z++;
+    }
+    cout << endl << "End of while loop" << endl;
+
+    cout << endl << endl;
     char text[] = "hello";
     for (int i = 0; i < sizeof(text); i++) {
         cout << i << ": " << text[i] << endl; // if cast text[i] to int prints the 0 to show string end 
