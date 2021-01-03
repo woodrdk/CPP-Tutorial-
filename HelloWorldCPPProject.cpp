@@ -120,19 +120,44 @@ public:
 // .cpp source
 int Test::count = 0;
 
+
+void manipulate(double value) {
+    cout << "2. Value of double in manipulate: " << value << endl;
+    value = 10.0;
+    cout << "3. Value of double in manipulate: " << value << endl;
+}
+
 int main()
 {
-    Test::showInfo();
-    cout << Test::MAX << endl;
-    Test test1;
-    cout << test1.getId();
-    cout << endl << "^^ Test id ^^" << endl;
-    Test::showInfo();
 
-    Test test2;
-    cout << test2.getId();
-    cout << endl <<  "^^ Test id ^^" << endl;
-    Test::showInfo();
+    int nValue = 8;
+    int* pnValue = &nValue; // or int *pnValue
+
+    //nValue = 9;
+    cout << "Int value: " << nValue << endl;
+    cout << "Pointer to int address: " << pnValue << endl;
+    cout << "Int value via pointer: " << *pnValue << endl;
+
+    cout << "===========================" << endl;
+    double dValue = 123.4;
+    cout << "1. dValue: " << dValue << endl;
+    manipulate(dValue);
+    cout << "4. dValue: " << dValue << endl;
+
+
+
+
+    //Test::showInfo();
+    //cout << Test::MAX << endl;
+    //Test test1;
+    //cout << test1.getId();
+    //cout << endl << "^^ Test id ^^" << endl;
+    //Test::showInfo();
+
+    //Test test2;
+    //cout << test2.getId();
+    //cout << endl <<  "^^ Test id ^^" << endl;
+    //Test::showInfo();
     //cout << Test::count << endl;
     //Test::count++;
     //cout << Test::count << endl;
